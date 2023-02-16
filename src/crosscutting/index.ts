@@ -1,2 +1,2 @@
-export * from './Entidade'
+export * from './Entity'
 export * from './IRepo'

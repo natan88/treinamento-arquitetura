@@ -1,8 +1,8 @@
-import { Entidade } from '../../crosscutting';
+import { Entity } from '../../crosscutting';
 import { Endereco } from './Endereco';
 import { Pessoa } from './Pessoa';
 
-export abstract class Imovel extends Entidade<number> {
+export abstract class Imovel extends Entity<number> {
   endereco: Endereco
   proprietario: Pessoa
   alugado: boolean

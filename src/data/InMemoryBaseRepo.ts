@@ -1,6 +1,6 @@
-import { Entidade, filterRepoParam, IRepo } from '../crosscutting';
+import { Entity, filterRepoParam, IRepo } from '../crosscutting';
 
-export abstract class InMemoryBaseRepo<T extends Entidade> implements IRepo<T> {
+export abstract class InMemoryBaseRepo<T extends Entity> implements IRepo<T> {
   private itens: Array<T> = new Array<T>()
   private proximoId: number
 

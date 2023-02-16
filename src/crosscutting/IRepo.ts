@@ -1,8 +1,8 @@
-import { Entidade } from './Entidade';
+import { Entity } from './Entity';
 
 export type filterRepoParam = [key: string, value: number | string | boolean]
 
-export interface IRepo<T extends Entidade> {
+export interface IRepo<T extends Entity> {
   insert(item: T): Promise<T>
   update(item: T): Promise<T | null>
   delete(item: T): Promise<boolean>

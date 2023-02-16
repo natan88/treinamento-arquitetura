@@ -1,9 +1,9 @@
 import { injectable } from 'inversify'
-import { Entidade } from '../../crosscutting'
+import { Entity } from '../../crosscutting'
 import { Endereco } from './Endereco'
 import { Imovel } from './Imovel'
 
-export class Pessoa extends Entidade<number> {
+export class Pessoa extends Entity<number> {
   protected nome: string
   protected cpf: string
   protected endereco: Endereco
