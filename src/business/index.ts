@@ -1,0 +1,7 @@
+export * from './entities'
+export * from './LocacaoService'
+export * from './ILocacaoRepo'
+export * from './IImovelRepo'
+export * from './IInquilinoRepo'
+export * from './IPessoaRepo'
+export * from './InquilinoService'
