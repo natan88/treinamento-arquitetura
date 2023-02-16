@@ -1,10 +1,21 @@
 import { Container } from 'inversify'
-import { InMemoryImovelRepo, InMemoryInquilinoRepo, InMemoryLocacaoRepo, InMemoryPessoaRepo } from '../data'
-import { IImovelRepo, IInquilinoRepo, ILocacaoRepo, InquilinoService, IPessoaRepo, LocacaoService } from '../business'
-import { TYPES } from './Types';
-import { PessoaService } from '../business/PessoaService';
-import { ImovelService } from '../business/ImovelService';
-
+import { TYPES } from './Types'
+import { PessoaService } from '../business/PessoaService'
+import { ImovelService } from '../business/ImovelService'
+import {
+  InMemoryImovelRepo,
+  InMemoryInquilinoRepo,
+  InMemoryLocacaoRepo,
+  InMemoryPessoaRepo
+} from '../data'
+import {
+  IImovelRepo,
+  IInquilinoRepo,
+  ILocacaoRepo,
+  InquilinoService,
+  IPessoaRepo,
+  LocacaoService
+} from '../business'
 export class IoC {
   constructor(
     private container: Container = new Container({ skipBaseClassChecks: true, autoBindInjectable: true })

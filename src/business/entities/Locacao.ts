@@ -1,9 +1,9 @@
-import { Entity } from '../../crosscutting'
+import { Entidade } from '../../crosscutting'
 import { Imovel } from './Imovel'
 import { LocacaoStatus } from './LocacaoStatus'
 import { Inquilino } from './Pessoa'
 
-export class Locacao extends Entity<number> {
+export class Locacao extends Entidade<number> {
   private imovel: Imovel
   private inquilino: Inquilino
   private valorMensal: number
